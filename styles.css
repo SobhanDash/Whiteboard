@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700;900&display=swap");
+
+:root {
+  --bg-dark: #333333;
+  --color-light: #333333;
+  --bg-light: #f0f8ff;
+  --color-dark: #f0f8ff;
+  --secondary-1: #519E8A;
+  --secondary-2: #5E2BFF;
+  --secondary-3: #9649CB;
+  --shadow-dark: rgba(51, 51, 51, 0.877);
+  --shadow-light: rgba(240, 248, 255, 0.842);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Overlock", cursive;
+  background: var(--bg-dark);
+  color: var(--color-dark);
+}
+
+.info-icon {
+  color: var(--color-dark);
+  font-size: 1.8rem;
+  margin: 1rem;
+  position: absolute;
+  box-shadow: 0 0 3px 1px var(--shadow-light);
+  border-radius: 50%;
+  top: 1rem;
+  right: 2rem;
+}
+
+.info-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.1s ease-in-out;
+
+}
+
+.info-container {
+  width: 350px;
+  background: var(--secondary-1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px 2px var(--shadow-light);
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.content i {
+  display: inline-block;
+  margin-left: 16.5rem;
+  margin-top: -2.3rem;
+  font-size: 1.5rem;
+}
+
+.light {
+  background: var(--bg-light);
+  color: var(--color-light);
+}
+
+.light .info-container {
+  box-shadow: 0 2px 8px 2px var(--shadow-dark);
+}
+
+.light .info-icon {
+  color: var(--color-light);
+  box-shadow: 0 0 3px 1px var(--shadow-dark);
+}
