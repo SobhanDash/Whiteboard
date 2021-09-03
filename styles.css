@@ -5,9 +5,9 @@
   --color-light: #333333;
   --bg-light: #f0f8ff;
   --color-dark: #f0f8ff;
-  --secondary-1: #519E8A;
-  --secondary-2: #5E2BFF;
-  --secondary-3: #9649CB;
+  --secondary-1: #519e8a;
+  --secondary-2: #5e2bff;
+  --secondary-3: #9649cb;
   --shadow-dark: rgba(51, 51, 51, 0.877);
   --shadow-light: rgba(240, 248, 255, 0.842);
 }
@@ -18,6 +18,8 @@
   box-sizing: border-box;
 }
 
+/* dark theme */
+
 body {
   width: 100vw;
   height: 100vh;
@@ -25,6 +27,7 @@ body {
   font-family: "Overlock", cursive;
   background: var(--bg-dark);
   color: var(--color-dark);
+  cursor: crosshair;
 }
 
 .info-icon {
@@ -36,12 +39,15 @@ body {
   border-radius: 50%;
   top: 1rem;
   right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-icon:hover {
   transform: scale(1.2);
   transition: all 0.1s ease-in-out;
-
+  cursor: default;
 }
 
 .info-container {
@@ -54,9 +60,10 @@ body {
   padding: 1.5rem;
   box-shadow: 0 2px 8px 2px var(--shadow-light);
   display: none;
+  font-weight: 900;
 }
 
-.active{
+.active {
   display: block;
 }
 
@@ -71,13 +78,86 @@ body {
 .content i {
   display: inline-block;
   margin-left: 16.5rem;
-  margin-top: -2.3rem;
+  margin-top: -1.3rem;
   font-size: 1.5rem;
 }
 
+.content h1,
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.tray,
+.penPallete {
+  background: linear-gradient(var(--secondary-2), var(--secondary-3));
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  flex-direction: column;
+  z-index: 3;
+  box-shadow: -3px 1px 8px 2px var(--shadow-light);
+  padding: 0.3rem;
+}
+
+.icon {
+  position: relative;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 53px;
+  transition: 0.2s ease-in-out;
+  cursor: default;
+}
+
+.icon:hover {
+  animation: shake 1s ease-in-out 2;
+}
+
+.toolInfo {
+  position: absolute;
+  font-size: 1rem;
+  transform: translate(-50%, 0);
+  left: 30%;
+  text-align: center;
+  font-family: "Overlock", cursive;
+  padding: 0 1rem;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  font-weight: 900;
+}
+
+.icon:hover .toolInfo {
+  opacity: 1;
+  transform: translate(50%, 0);
+}
+
+#colorPicker {
+  position: relative;
+}
+.color-picker {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: none;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.tray-swap {
+  transform: translate(-100%, -50%);
+}
+
+/* for light theme */
 .light {
   background: var(--bg-light);
-  color: var(--color-light);
 }
 
 .light .info-container {
@@ -87,4 +167,33 @@ body {
 .light .info-icon {
   color: var(--color-light);
   box-shadow: 0 0 3px 1px var(--shadow-dark);
+}
+
+.light .tray {
+  color: var(--color-dark);
+  box-shadow: -3px 1px 8px 2px var(--shadow-dark);
+}
+
+.light .toolInfo {
+  color: var(--color-light);
+}
+
+.light #colorPicker {
+  color: var(--color-light);
+}
+
+/* animations */
+@keyframes shake {
+  25% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  75% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

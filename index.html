@@ -10,13 +10,19 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="./scripts/canvas.js" defer></script>
+    <script src="./scripts/misc.js" defer></script>
     <title>Slate</title>
   </head>
   <body class="">
-    <i class="ri-information-fill info-icon"></i>
-    <div class="info-container active">
+    <canvas class="slate"></canvas>
+
+    <div class="info-icon">
+      <i class="ri-information-fill"></i>
+    </div>
+
+    <div class="info-container">
       <div class="content">
-        <i class="ri-close-line close"></i>
+        <i class="ri-close-line icon close"></i>
         <h1>Slate</h1>
         <ul class="list">
           <h3>What Can you do?</h3>
@@ -30,6 +36,54 @@
           <li>Save as png</li>
         </ul>
       </div>
+    </div>
+
+    <div class="tray">
+      <i class="ri-pencil-fill icon" id="penTool"
+        ><label class="toolInfo">Pen Pallete</label></i
+      >
+      <i class="ri-moon-fill icon" id="theme"
+        ><label class="toolInfo">Theme</label></i
+      >
+      <i class="ri-text icon" id="addText"
+        ><label class="toolInfo">Add Text</label></i
+      >
+      <i class="ri-arrow-go-back-fill icon" id="undo"
+        ><label class="toolInfo">Undo</label></i
+      >
+      <i class="ri-arrow-go-forward-fill icon" id="redo"
+        ><label class="toolInfo">Redo</label></i
+      >
+      <i class="ri-delete-bin-4-fill icon" id="clearAll"
+        ><label class="toolInfo">Clear Board</label></i
+      >
+      <i class="ri-download-fill icon" id="download"
+        ><label class="toolInfo">Download</label></i
+      >
+    </div>
+
+    <div class="penPallete tray-swap">
+      <i class="ri-arrow-left-s-fill icon" id="back"
+        ><label class="toolInfo">Back</label></i
+      >
+      <i class="ri-checkbox-blank-circle-fill icon" id="colorPicker">
+        <label class="toolInfo">Color</label>
+        <input type="color" class="color-picker"
+      /></i>
+
+      <i class="ri-pencil-fill icon" id="penTool1" style="color: red"
+        ><label class="toolInfo">Red</label></i
+      >
+      <i class="ri-pencil-fill icon" id="penTool2" style="color: blue"
+        ><label class="toolInfo">Blue</label></i
+      >
+      <i class="ri-pencil-fill icon" id="penTool3" style="color: green"
+        ><label class="toolInfo">Green</label></i
+      >
+      <i class="ri-eraser-fill icon"><label class="toolInfo">Eraser</label></i>
+      <i class="ri-delete-bin-4-fill icon" id="clearAll"
+        ><label class="toolInfo">Clear Board</label></i
+      >
     </div>
   </body>
 </html>
