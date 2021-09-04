@@ -34,7 +34,7 @@ function draw(e) {
     hue = 0;
   }
   //increase and decrease the line width
-  if (ctx.lineWidth >= 50 || ctx.lineWidth <= 1) {
+  if (ctx.lineWidth >= 20 || ctx.lineWidth <= 1) {
     direction = !direction;
   }
   if (direction) {
