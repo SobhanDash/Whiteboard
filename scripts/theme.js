@@ -1,7 +1,7 @@
-//selector
+//SELECTORS
 const theme = document.querySelector("#theme");
 
-//event listener
+//EVENT LISTENERS
 theme.addEventListener("click", () => {
   theme.classList.toggle("ri-sun-line");
   theme.classList.toggle("ri-moon-line");

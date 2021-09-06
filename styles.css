@@ -10,6 +10,7 @@
   --secondary-3: #9649cb;
   --shadow-dark: rgba(51, 51, 51, 0.877);
   --shadow-light: rgba(240, 248, 255, 0.842);
+  --s-1-light: rgba(81, 158, 138, 0.61);
 }
 
 * {
@@ -79,6 +80,12 @@ body {
   display: block;
 }
 
+.active-tool{
+  transform: translate(80%, 0);
+  background: var(--s-1-light);
+  border-radius: 10px;
+}
+
 .content {
   display: flex;
   justify-content: center;
@@ -129,7 +136,7 @@ h3 {
 }
 
 .icon:hover {
-  animation: shake 1s ease-in-out 2;
+  animation: shake 1s ease-in-out 1;
 }
 
 .toolInfo {

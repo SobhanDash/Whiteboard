@@ -9,15 +9,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <!-- <script src="./scripts/canvas.js" defer></script> -->
+    <!-- <script src="./scripts/temp.js" defer></script> -->
+    <script src="./scripts/canvas.js" defer></script>
     <script src="./scripts/draw.js" defer></script>
     <script src="./scripts/icons.js" defer></script>
     <script src="./scripts/theme.js" defer></script>
-    <script src="./scripts/temp.js" defer></script>
     <script src="./scripts/fullsreen.js" defer></script>
     <script src="./scripts/clearCanvas.js" defer></script>
     <script src="./scripts/download.js" defer></script>
-    
+    <script src="./scripts/colorEraser.js" defer></script>
+
     <title>Slate</title>
   </head>
   <body class="">
@@ -28,8 +29,9 @@
     </div>
 
     <div class="fullscreen">
-      <i class="ri-fullscreen-fill full"><label class="toolInfo fullLabel">Fullcreen</label></i>
-      
+      <i class="ri-fullscreen-fill full"
+        ><label class="toolInfo fullLabel">Fullcreen</label></i
+      >
     </div>
 
     <div class="info-container">
@@ -51,7 +53,7 @@
     </div>
 
     <div class="tray">
-      <i class="ri-pencil-fill icon" id="penTool"
+      <i class="ri-pencil-fill icon" id="penPallete"
         ><label class="toolInfo">Pen Pallete</label></i
       >
       <i class="ri-moon-fill icon" id="theme"
@@ -80,24 +82,27 @@
       >
       <i class="ri-checkbox-blank-circle-fill icon" id="colorPicker">
         <label class="toolInfo">Color</label>
-        <input type="color" class="color-picker"
+        <input type="color" class="color-picker" oninput="changeColor(this)" value="#519e8a"
       /></i>
 
-      <i class="ri-pencil-fill icon" id="penTool1" style="color: red"
+      <i class="ri-pencil-fill icon defPen" style="color: red"
         ><label class="toolInfo">Red</label></i
       >
-      <i class="ri-pencil-fill icon" id="penTool2" style="color: blue"
+      <i class="ri-pencil-fill icon defPen" style="color: blue"
         ><label class="toolInfo">Blue</label></i
       >
-      <i class="ri-pencil-fill icon" id="penTool3" style="color: green"
+      <i class="ri-pencil-fill icon defPen" style="color: green"
         ><label class="toolInfo">Green</label></i
       >
-      <i class="ri-eraser-fill icon"><label class="toolInfo">Eraser</label></i>
-        <i class="ri-delete-bin-4-fill icon" id="clearAll2"
-          ><label class="toolInfo">Clear Board</label></i
-        >
+      <i class="ri-mark-pen-fill icon highlight" style="color: yellowgreen"
+        ><label class="toolInfo">Highlighter</label></i
+      >
+      <i class="ri-eraser-fill icon" id="erase"
+        ><label class="toolInfo">Eraser</label></i
+      >
+      <i class="ri-delete-bin-4-fill icon" id="clearAll2"
+        ><label class="toolInfo">Clear Board</label></i
+      >
     </div>
-
-    
   </body>
 </html>

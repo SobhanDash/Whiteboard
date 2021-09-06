@@ -1,9 +1,9 @@
-//selectors
+//SELECTORS
 const fullscreen = document.querySelector(".full");
 const fullLabel = document.querySelector(".fullLabel");
 const fs = document.documentElement;
 
-//functions
+//FUNCTIONS
 function openScreen() {
   fullscreen.classList.remove("ri-fullscreen-fill");
   fullscreen.classList.add("ri-fullscreen-exit-fill");
@@ -38,5 +38,5 @@ function iconChange() {
   }
 }
 
-//event listener
+//EVENT LISTENERS
 fullscreen.addEventListener("click", iconChange);
