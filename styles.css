@@ -27,7 +27,6 @@ body {
   overflow: hidden;
   font-family: "Overlock", cursive;
   background: var(--bg-dark);
-  color: var(--color-dark);
   cursor: crosshair;
 }
 
@@ -45,7 +44,7 @@ body {
   align-items: center;
 }
 
-.fullscreen{
+.fullscreen {
   color: var(--color-dark);
   position: absolute;
   font-size: 1.8rem;
@@ -57,7 +56,8 @@ body {
   border-radius: 8px;
 }
 
-.info-icon:hover, .fullscreen:hover {
+.info-icon:hover,
+.fullscreen:hover {
   transform: scale(1.2);
   transition: all 0.1s ease-in-out;
   cursor: default;
@@ -80,7 +80,7 @@ body {
   display: block;
 }
 
-.active-tool{
+.active-tool {
   transform: translate(80%, 0);
   background: var(--s-1-light);
   border-radius: 10px;
@@ -133,6 +133,7 @@ h3 {
   height: 53px;
   transition: 0.2s ease-in-out;
   cursor: default;
+  color: var(--color-dark);
 }
 
 .icon:hover {
