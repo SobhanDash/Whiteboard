@@ -30,6 +30,16 @@ body {
   cursor: crosshair;
 }
 
+.stroke{
+  position: absolute;
+  border-radius: 50%;
+  transition: visibility 0.3s ease-in-out;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .info-icon {
   color: var(--color-dark);
   font-size: 1.8rem;
@@ -199,6 +209,10 @@ h3 {
 }
 
 .light #colorPicker {
+  color: var(--color-light);
+}
+
+.light .fullscreen{
   color: var(--color-light);
 }
 

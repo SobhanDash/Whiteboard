@@ -16,7 +16,6 @@ let drawWidth = 4;
 ctx.lineJoin = "round";
 //whats the shape of the line caps(ends)
 ctx.lineCap = "round";
-ctx.translate(0.5, 0.5);
 let isDrawing = false;
 let activeTool = null;
 

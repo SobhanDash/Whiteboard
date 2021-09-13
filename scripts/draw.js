@@ -22,6 +22,8 @@ function draw(e) {
     ctx.lineTo(e.clientX, e.clientY);
     ctx.strokeStyle = drawColor;
     ctx.lineWidth = drawWidth;
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
     ctx.stroke();
   }
 }

@@ -17,11 +17,13 @@
     <script src="./scripts/clearCanvas.js" defer></script>
     <script src="./scripts/download.js" defer></script>
     <script src="./scripts/colorEraser.js" defer></script>
+    <script src="./scripts/drawWidth.js" defer></script>
 
     <title>Slate</title>
   </head>
   <body class="">
     <canvas id="slate"></canvas>
+    <div class="stroke"></div>
 
     <div class="info-icon">
       <i class="ri-information-fill"></i>
@@ -81,7 +83,11 @@
       >
       <i class="ri-checkbox-blank-circle-fill icon" id="colorPicker">
         <label class="toolInfo">Color</label>
-        <input type="color" class="color-picker" oninput="changeColor(this)" value="#519e8a"
+        <input
+          type="color"
+          class="color-picker"
+          oninput="changeColor(this)"
+          value="#519e8a"
       /></i>
 
       <i class="ri-pencil-fill icon defPen" style="color: red"
