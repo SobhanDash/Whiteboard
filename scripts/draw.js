@@ -46,6 +46,7 @@ function endDraw(e) {
     ctx.closePath();
     isDrawing = false;
   }
+  save.saveUndoState();
 }
 
 //EVENT LISTENERSs
