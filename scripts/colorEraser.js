@@ -36,6 +36,7 @@ function endErase(e) {
     ctx.closePath();
     isDrawing = false;
   }
+  save.saveUndoState();
 }
 
 //EVENT LISTENERS
