@@ -19,6 +19,7 @@
     <script src="./scripts/colorEraser.js" defer></script>
     <script src="./scripts/drawWidth.js" defer></script>
     <script src="./scripts/undoRedo.js" defer></script>
+    <script src="./scripts/addText.js" defer></script>
 
     <title>Slate</title>
   </head>
@@ -32,7 +33,7 @@
 
     <div class="fullscreen">
       <i class="ri-fullscreen-fill full"
-        ><label class="toolInfo fullLabel">Fullcreen</label></i
+        ><label class="toolInfo fullLabel">Fullscreen</label></i
       >
     </div>
 
@@ -109,6 +110,21 @@
       <i class="ri-delete-bin-4-fill icon" id="clearAll2"
         ><label class="toolInfo">Clear Board</label></i
       >
+    </div>
+    <div class="addTextContainer">
+      <div class="addTextWindow">
+        <textarea id="addTextArea" rows="7" cols="25"></textarea>
+        <div class="textColorPick">
+          <input type="color" id="textColorPicker" value="#ffffff">
+        </div>
+        <div class="textSizePick">
+          <input type="range" id="textSizePicker" value="18" min="10" max="100">
+        </div>
+        <div class="addTextWindowBtns">
+          <button id="addBtn">Add Text</button>
+          <button id="cancelBtn">Cancel</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
