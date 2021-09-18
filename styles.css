@@ -216,6 +216,54 @@ h3 {
   color: var(--color-light);
 }
 
+.addTextContainer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.addTextWindow {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.addTextWindow > * {
+  text-align: center;
+}
+
+#addTextArea {
+  border-radius: 10px;
+}
+
+#textColorPicker {
+  margin: 10px;
+}
+
+#textSizePicker {
+  width: 100%;
+}
+
+.addTextWindowBtns {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 10px 0 ;
+}
+
+.addTextWindowBtns button {
+  padding: 10px;
+  border: 1px solid rgb(126, 124, 124);
+  border-radius: 10px;
+}
+
+
 /* animations */
 @keyframes shake {
   25% {
