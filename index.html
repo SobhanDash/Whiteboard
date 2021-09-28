@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="shortcut icon"
+      href="./assets/whiteboard.png"
+      type="image/x-icon"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
     <script src="./scripts/canvas.js" defer></script>
     <script src="./scripts/draw.js" defer></script>
     <script src="./scripts/icons.js" defer></script>
@@ -115,10 +120,16 @@
       <div class="addTextWindow">
         <textarea id="addTextArea" rows="7" cols="25"></textarea>
         <div class="textColorPick">
-          <input type="color" id="textColorPicker" value="#ffffff">
+          <input type="color" id="textColorPicker" value="#ffffff" />
         </div>
         <div class="textSizePick">
-          <input type="range" id="textSizePicker" value="18" min="10" max="100">
+          <input
+            type="range"
+            id="textSizePicker"
+            value="18"
+            min="10"
+            max="100"
+          />
         </div>
         <div class="addTextWindowBtns">
           <button id="addBtn">Add Text</button>
