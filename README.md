@@ -2,6 +2,7 @@
 
 <h1 align="center">Introduction 👩🏻‍💻👨🏻‍💻 </h1>
 Live Demo:
+
 ![LiveDemo](https://github.com/SobhanDash/Whiteboard/blob/master/assets/video/Slate.gif)
 
 <p align="center"> <strong>Slate offers a delightful, modern mobile learning experience</strong></p>
