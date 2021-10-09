@@ -3,7 +3,10 @@
 <h1 align="center">Introduction 👩🏻‍💻👨🏻‍💻 </h1>
 Live Demo:
 
+<p align="center">
+
 ![LiveDemo](https://github.com/SobhanDash/Whiteboard/blob/master/assets/video/Slate.gif)
+</p>
 
 <p align="center"> <strong>Slate offers a delightful, modern mobile learning experience</strong></p>
 
@@ -22,7 +25,6 @@ Live Demo:
 <p align="center"><strong>Landing Page</strong></p>
 
 ![LandingPage](https://github.com/SobhanDash/Whiteboard/blob/master/assets/images/Landing.png)
-
 
 <p align="center"><strong>User can select Diffrent Color pen</strong></p>
 
